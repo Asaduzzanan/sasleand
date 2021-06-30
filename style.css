@@ -1,0 +1,137 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+@font-face {
+    font-family: "Desert Rose";
+    src: url(font/Lobster-Regular.ttf);
+}
+/* Typography */
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+h1{
+    font-family: "Desert Rose";
+}
+body{
+    font-family: sans-serif;
+}
+.container_full {
+    width: 100%;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* Header Section */
+.header_bg {
+    background-color: #8057f5;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    margin: 0 5px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+}
+nav ul li a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    transition: width .5s ease-in-out;
+}
+nav ul li a:hover:before {
+    width: 100%;
+}
+/* Banner section */
+#banner {
+    width: 100%;
+    padding: 150px 0;
+    text-align: center;
+    color: #fff;
+}
+#banner h1 {
+    font-family: cursive;
+    font-size: 60px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+#banner p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+/* article section */
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+.article .col {
+    width: 50%;
+    padding: 0 10px;
+}
+.article .col h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+.article .col p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+.article .sectionimg img {
+    padding-left: 40px;
+}
+/*Footer section*/
+.footer_bg {
+    background-color: #f5f5fa;
+    margin-top: 80px;
+    padding-top: 80px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .col {
+    width: 25%;
+    text-align: center;
+}
+footer .col p {
+    padding: 25px 0;
+    text-align: left;
+    line-height: 1.6;
+}
+footer .col ul {
+    padding: 25px 0;
+}
+footer .col ul li a {
+    color: #333;
+}
